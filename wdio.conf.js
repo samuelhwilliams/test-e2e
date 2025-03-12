@@ -14,7 +14,14 @@ exports.config = {
         browserName: "chrome",
         browserVersion: '133',
         acceptInsecureCerts: true,
-        "goog:chromeOptions": {args: ['headless', 'disable-gpu']},
+        "goog:chromeOptions": {args: [
+            '--headless',
+            '--no-sandbox',
+            '--disable-dev-shm-usage',
+            '--disable-gpu',
+            '--window-size=1440,900',
+            `--user-data-dir=/tmp/chrome-data-${Date.now()}`
+        ]},
     }],
     
     // Test configurations
