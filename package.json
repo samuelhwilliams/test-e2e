@@ -1,0 +1,19 @@
+{
+  "name": "minimal-wdio-test",
+  "version": "1.0.0",
+  "description": "Minimal WebdriverIO test with Chrome",
+  "main": "test.js",
+  "scripts": {
+    "test": "wdio run wdio.conf.js"
+  },
+  "dependencies": {
+    "@wdio/cli": "^8.31.1"
+  },
+  "devDependencies": {
+    "@wdio/local-runner": "^8.31.1",
+    "@wdio/mocha-framework": "^8.31.1",
+    "@wdio/spec-reporter": "^8.31.1",
+    "wdio-chromedriver-service": "^8.1.1",
+    "chromedriver": "^133.0.0"
+  }
+}
