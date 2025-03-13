@@ -33,10 +33,9 @@ exports.config = {
     connectionRetryCount: 3,
     
     // Test framework
-    framework: 'mocha',
+    framework: 'jasmine',
     reporters: ['spec'],
-    mochaOpts: {
-        ui: 'bdd',
-        timeout: 60000
+    jasmineOpts: {
+        defaultTimeoutInterval: 60000
     }
 };

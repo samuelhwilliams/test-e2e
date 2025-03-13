@@ -1,4 +1,4 @@
-// test.js
+// test.js - Using Jasmine framework
 describe('Google Homepage Test', () => {
     it('should navigate to Google and verify title', async () => {
         // Navigate to Google (baseUrl from config)
@@ -8,7 +8,7 @@ describe('Google Homepage Test', () => {
         const title = await browser.getTitle();
         console.log(`Page title: ${title}`);
         
-        // Assert that we're on Google
-        await expect(browser).toHaveTitle(expect.stringContaining('Google'));
+        // Jasmine assertion to verify we're on Google
+        expect(title).toContain('Google');
     });
 });
